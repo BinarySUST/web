@@ -5,5 +5,8 @@
     "prettier",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended"
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-object-type": "off"
+  }
 }
