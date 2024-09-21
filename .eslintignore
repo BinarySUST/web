@@ -7,3 +7,5 @@
 **/npm/**
 **/*.d.ts
 **/node_modules
+
+.eslintcache
