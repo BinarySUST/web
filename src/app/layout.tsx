@@ -1,6 +1,5 @@
 import type {Metadata} from 'next';
 import {Inter} from 'next/font/google';
-import {ThemeProvider} from '@/components/theme-provider';
 import '../styles/globals.css';
 import Header from '@/components/Header';
 
@@ -19,10 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <Header />
-          <main className="container mx-auto px-4 py-8">{children}</main>
-        </ThemeProvider>
+        <Header />
+        <main className="container mx-auto px-4 py-8">{children}</main>
       </body>
     </html>
   );

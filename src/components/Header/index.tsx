@@ -18,7 +18,7 @@ export default function Header() {
     <header className="bg-background shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <Link href="/" className="text-2xl font-bold text-primary">
+          <Link href="/" className="text-2xl font-bold text-foreground">
             BinarySUST
           </Link>
           <div className="hidden md:flex space-x-4">
@@ -26,7 +26,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors">
+                className="text-foreground hover:text-primary-foreground transition-colors">
                 {item.label}
               </Link>
             ))}
@@ -45,7 +45,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-foreground hover:text-primary transition-colors"
+                className="block py-2 text-foreground hover:text-primary-foreground transition-colors"
                 onClick={() => setIsMenuOpen(false)}>
                 {item.label}
               </Link>
